@@ -1,3 +1,8 @@
+/**
+ * Test utilities for `REACT`/`Jest`
+ * @packageDocumentation
+ */
+
 export * from "./modules/checkbox.utils";
 export * from "./modules/click.utils";
 export * from "./modules/exist.utils";
