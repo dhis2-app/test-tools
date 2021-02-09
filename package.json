@@ -21,17 +21,6 @@
     "analyze": "size-limit --why",
     "publish": "npm publish --access=public"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "tsdx lint"
-    }
-  },
-  "prettier": {
-    "printWidth": 80,
-    "semi": true,
-    "singleQuote": true,
-    "trailingComma": "es5"
-  },
   "name": "@dhis2-app/test-tools",
   "author": "jakub-bao",
   "module": "dist/test-tools2.esm.js",
