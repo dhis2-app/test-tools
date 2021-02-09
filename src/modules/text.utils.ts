@@ -1,5 +1,6 @@
 import {screen, waitFor} from "@testing-library/react";
 
+/* Check if `text` is present in DOM right now. */
 export function text(text:string):void{
     screen.getAllByText(text);
 }
