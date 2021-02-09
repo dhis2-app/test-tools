@@ -11,7 +11,7 @@ This library focuses on `REACT` + `Jest` used case and is inspired by super hand
 
 `@dhis2-app/test-tools` should help you write your tests much faster and make them much more readable. Disagree? Submit an issue in our repo!
 
-###Example:
+### Example:
 
 Instead of: 
 ```
