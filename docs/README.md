@@ -1,3 +1,5 @@
+@dhis2-app/test-tools / [Exports](modules.md)
+
 # REACT Test Utils
 
 This super-light library will help you write your REACT tests much more effectively.
@@ -41,4 +43,4 @@ select(selectId,value);
 ```
 
 ## API
-Full list of all methods in [API docs](./docs/modules.md)
+Full list of all methods: [Duck Duck Go](https://duckduckgo.com).

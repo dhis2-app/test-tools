@@ -19,7 +19,8 @@
     "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
-    "publish": "npm publish --access=public"
+    "publish": "npm publish --access=public",
+    "docs": "typedoc --plugin typedoc-plugin-markdown src/index.ts"
   },
   "name": "@dhis2-app/test-tools",
   "author": "jakub-bao",
@@ -36,7 +37,9 @@
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@types/react": "^17.0.1",
-    "react": "^17.0.1"
+    "react": "^17.0.1",
+    "typedoc": "^0.20.23",
+    "typedoc-plugin-markdown": "^3.4.5"
   },
   "repository": {
     "type": "git",
