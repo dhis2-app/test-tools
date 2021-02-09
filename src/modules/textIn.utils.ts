@@ -7,7 +7,7 @@ import {screen} from "@testing-library/react";
  * ```javascript
  * textIn('username', 'Bob')
  * ```
- * @category Text Inside Element
+ * @category Text inside element
  * */
 export function textIn(id:string, text:string){
     expect(screen.getByTestId(id).textContent).toMatch(new RegExp(text));
@@ -20,7 +20,7 @@ export function textIn(id:string, text:string){
  * ```javascript
  * noTextIn('results', 'Bob')
  * ```
- * @category Text Inside Element
+ * @category Text inside element
  * */
 export function noTextIn(id:string, text:string){
     expect(screen.getByTestId(id).textContent).not.toMatch(new RegExp(text));
@@ -33,7 +33,7 @@ export function noTextIn(id:string, text:string){
  * ```javascript
  * textsIn('results', ['Bob','Tom'])
  * ```
- * @category Text Inside Element
+ * @category Text inside element
  * */
 export const textsIn = (id:string, texts:string[])=>texts.forEach((t:string)=>textIn(id, t));
 
@@ -44,6 +44,6 @@ export const textsIn = (id:string, texts:string[])=>texts.forEach((t:string)=>te
  * ```javascript
  * noTextsIn('results', ['Bob','Tom'])
  * ```
- * @category Text Inside Element
+ * @category Text inside element
  * */
 export const noTextsIn = (id:string, texts:string[])=>texts.forEach((t:string)=>noTextIn(id, t));

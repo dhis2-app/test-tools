@@ -1,9 +1,3 @@
-/**
- * Text utilities
- * @packageDocumentation
- * @module text
- */
-
 import {screen, waitFor} from "@testing-library/react";
 
 /**

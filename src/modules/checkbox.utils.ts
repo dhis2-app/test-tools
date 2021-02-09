@@ -1,6 +1,15 @@
 import {screen} from "@testing-library/react";
 
-export function checkboxValue(id:string, value:boolean){
+/**
+ * Check that checkbox found by `id` is `checked` (or unchecked for `false`)
+ *
+ * @example
+ * ```javascript
+ * checkboxValue('includeExpired', true)
+ * ```
+ * @category Checkbox
+ * */
+export function checkboxValue(id:string, checked:boolean){
     // @ts-ignore
-    expect(screen.getByTestId(id).checked).toBe(value);
+    expect(screen.getByTestId(id).checked).toBe(checked);
 }

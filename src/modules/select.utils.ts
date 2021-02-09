@@ -1,12 +1,30 @@
 import {fireEvent, screen} from "@testing-library/react";
 
-export async function select(selectId:string, value:string){
-    fireEvent.mouseDown(screen.getByTestId(selectId).childNodes[0]);
+/**
+ * Select `value` in select element found by `id`
+ *
+ * @example
+ * ```javascript
+ * select('pizzaDough','newYorkSyle')
+ * ```
+ * @category Select
+ * */
+export async function select(id:string, value:string){
+    fireEvent.mouseDown(screen.getByTestId(id).childNodes[0]);
     screen.getByText(value);
     fireEvent.click(screen.getByText(value));
-    checkSelectValue(selectId, value);
+    checkSelectValue(id, value);
 }
 
-export function checkSelectValue(selectId:string, value:string){
-    expect(screen.getByTestId(selectId).textContent).toMatch(new RegExp(value));
+/**
+ * Check that select element found by `id` has value `value`
+ *
+ * @example
+ * ```javascript
+ * checkSelectValue('pizzaDough','newYorkSyle')
+ * ```
+ * @category Select
+ * */
+export function checkSelectValue(id:string, value:string){
+    expect(screen.getByTestId(id).textContent).toMatch(new RegExp(value));
 }
