@@ -11,7 +11,6 @@ import {fireEvent, screen} from "@testing-library/react";
  * */
 export async function select(id:string, value:string){
     fireEvent.mouseDown(screen.getByTestId(id).childNodes[0]);
-    screen.getByText(value);
     fireEvent.click(screen.getByText(value));
     checkSelectValue(id, value);
 }

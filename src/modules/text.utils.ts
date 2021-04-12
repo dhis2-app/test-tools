@@ -10,7 +10,7 @@ import {screen, waitFor} from "@testing-library/react";
  * @category Text
  * */
 export function text(text:string):void{
-    screen.getAllByText(text);
+    screen.getAllByText(new RegExp(text));
 }
 
 /**
