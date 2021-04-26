@@ -1,4 +1,5 @@
 import {screen} from "@testing-library/react";
+// import '@testing-library/jest-dom/extend-expect';
 
 /**
  * Check that radio select found by `id` has selected value `value`
@@ -11,5 +12,5 @@ import {screen} from "@testing-library/react";
  * */
 export function checkRadioValue(id:string, value:string){
     // @ts-ignore
-    expect(screen.getByTestId(`${id}_${value}`).checked, `Checkbox > ${id} > ${value}`).toBe(true);
+    expect(screen.getByTestId(`${id}_${value}`).checked/*, `Checkbox > ${id} > ${value}`*/).toBe(true);
 }

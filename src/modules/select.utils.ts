@@ -15,6 +15,11 @@ export async function select(id:string, value:string){
     checkSelectValue(id, value);
 }
 
+export async function selectById(id:string, value:string){
+    fireEvent.mouseDown(screen.getByTestId(id).childNodes[0]);
+    fireEvent.click(screen.getByTestId(value));
+}
+
 /**
  * Check that select element found by `id` has value `value`
  *
