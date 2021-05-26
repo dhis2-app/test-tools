@@ -9,13 +9,13 @@ import {fireEvent, screen} from "@testing-library/react";
  * ```
  * @category Select
  * */
-export async function select(id:string, value:string){
+export function select(id:string, value:string){
     fireEvent.mouseDown(screen.getByTestId(id).childNodes[0]);
     fireEvent.click(screen.getByText(value));
     checkSelectValue(id, value);
 }
 
-export async function selectById(id:string, value:string){
+export function selectById(id:string, value:string){
     fireEvent.mouseDown(screen.getByTestId(id).childNodes[0]);
     fireEvent.click(screen.getByTestId(value));
 }
